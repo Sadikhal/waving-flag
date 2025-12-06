@@ -1,4 +1,4 @@
-#Waving Flag
+##Waving Flag
 
 A high-performance, strictly **Pure CSS** implementation of the Indian National Flag, built with React and Vite. This project demonstrates advanced CSS animation techniques to create a realistic, responsive, and aesthetic waving effect without using 3D libraries or external assets.
 
@@ -22,7 +22,7 @@ A high-performance, strictly **Pure CSS** implementation of the Indian National 
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/waiving-flag.git
+    https://github.com/Sadikhal/waving-flag.git
     cd waiving-flag
     ```
 
