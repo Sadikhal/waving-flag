@@ -1,0 +1,142 @@
+/* Ashoka Chakra */
+.ashoka-chakra {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chakra-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/* Outer part with thick circular border */
+.chakra-rim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 6px solid var(--navy-blue);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* Central with small circle */
+.chakra-hub {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--navy-blue);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Spokes container */
+.chakra-spokes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Individual spoke */
+.spoke {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: 0 0;
+}
+
+/* Create spoke shape */
+.spoke::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 43px;
+  background: var(--navy-blue);
+  left: -1.5px;
+  top: -43px;
+  border-radius: 1px;
+}
+
+/* Rotate each of the 24 spokes */
+.spoke:nth-child(1) { transform: rotate(0deg); }
+.spoke:nth-child(2) { transform: rotate(15deg); }
+.spoke:nth-child(3) { transform: rotate(30deg); }
+.spoke:nth-child(4) { transform: rotate(45deg); }
+.spoke:nth-child(5) { transform: rotate(60deg); }
+.spoke:nth-child(6) { transform: rotate(75deg); }
+.spoke:nth-child(7) { transform: rotate(90deg); }
+.spoke:nth-child(8) { transform: rotate(105deg); }
+.spoke:nth-child(9) { transform: rotate(120deg); }
+.spoke:nth-child(10) { transform: rotate(135deg); }
+.spoke:nth-child(11) { transform: rotate(150deg); }
+.spoke:nth-child(12) { transform: rotate(165deg); }
+.spoke:nth-child(13) { transform: rotate(180deg); }
+.spoke:nth-child(14) { transform: rotate(195deg); }
+.spoke:nth-child(15) { transform: rotate(210deg); }
+.spoke:nth-child(16) { transform: rotate(225deg); }
+.spoke:nth-child(17) { transform: rotate(240deg); }
+.spoke:nth-child(18) { transform: rotate(255deg); }
+.spoke:nth-child(19) { transform: rotate(270deg); }
+.spoke:nth-child(20) { transform: rotate(285deg); }
+.spoke:nth-child(21) { transform: rotate(300deg); }
+.spoke:nth-child(22) { transform: rotate(315deg); }
+.spoke:nth-child(23) { transform: rotate(330deg); }
+.spoke:nth-child(24) { transform: rotate(345deg); }
+
+/* Responsive Ashoka Chakra */
+@media (max-width: 768px) {
+  .chakra-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .chakra-rim {
+    border-width: 4px;
+  }
+  
+  .chakra-hub {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .spoke::before {
+    width: 2px;
+    height: 30px;
+    left: -1px;
+    top: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chakra-container {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .chakra-rim {
+    border-width: 3px;
+  }
+  
+  .chakra-hub {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .spoke::before {
+    width: 2px;
+    height: 26px;
+    left: -1px;
+    top: -26px;
+  }
+}

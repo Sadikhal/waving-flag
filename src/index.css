@@ -1,0 +1,35 @@
+:root {
+  /* Indian Flag Official Colors */
+  --saffron: #ff9933;
+  --white: #ffffff;
+  --green: #138808;
+  --navy-blue: #000080;
+
+  /* Typography */
+  --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  min-height: 100vh;
+  background: linear-gradient(
+    to top right,
+    #886c0840 0%,
+    rgba(100, 180, 100, 0.15) 50%,
+    transparent 100%
+  );
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
