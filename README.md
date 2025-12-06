@@ -1,4 +1,4 @@
-# 🇮🇳 Tiranga - The Tricolour of India
+#Waving Flag
 
 A high-performance, strictly **Pure CSS** implementation of the Indian National Flag, built with React and Vite. This project demonstrates advanced CSS animation techniques to create a realistic, responsive, and aesthetic waving effect without using 3D libraries or external assets.
 
