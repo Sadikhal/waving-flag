@@ -22,7 +22,7 @@ A high-performance, strictly **Pure CSS** implementation of the Indian National 
 1.  **Clone the repository:**
 
     ```bash
-    https://github.com/Sadikhal/waving-flag.git
+    git clone https://github.com/Sadikhal/waving-flag.git
     cd waiving-flag
     ```
 
